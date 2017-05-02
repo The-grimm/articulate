@@ -1,4 +1,6 @@
 
+[![Build Status](https://travis-ci.org/eitansuez/articulate.svg?branch=master)](https://travis-ci.org/eitansuez/articulate)
+
 # Articulate
 
 A sample application built with [Spring Boot](http://projects.spring.io/spring-boot/) that demonstrates capabilities of Cloud Foundry.
