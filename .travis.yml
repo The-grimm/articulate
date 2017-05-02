@@ -1,14 +1,15 @@
 language: java
 jdk:
-  - oraclejdk8
+- oraclejdk8
 script: env && ./mvnw package -B
-before_deploy: ./ci/travis_beforeDeploy.sh
 deploy:
-  provider: bintray
-  file: .bintray.desc
-  user: mborges-pivotal
-  key:
-    secure: YA46mZniYwD05sWtrFdlkhidBxE89nhS3fpO8dfeMwrpH3kuQ8n+ctuPKHWCyrNIEiLPAqdXVRocDeDoTTm//+rQiCeTj/PUPBd7xqDc9lXuKZ2CY+eQ1DjW9P+7nj1Ob+xhoF9wIp2Pvlo1xocdmJOP8h6eRHCQ5Xmmr9UDBz/sAvxwM+haICEYfKR/IR3NvZzX0KiUdgjXEAN8I2C4rhYwLuZWrlZ3wdU0T7U81Pfoy4eAlZe4p/AqOlspvusNT6MBzRBUYP0HRQ4goph0N60kGqLkWuMRAGIc4c+CEpHvyE7UXgAZ4eGg3motAvAUmfQNpsm/sKB0NSubn1vXz+vUtGmpmPtl6KSyT7ha0xA7GUof+j6dQBG0q51H2Zg40cKofHXYTPcVxNMVh/cV9zWm+xzhe+6YqbdMETBtJH71dIIFHIeuwV1fferA7Jg70IquozNoJDmPzSeEx68eq3BtmJjKLSyUQFxJK/Dq+g7qqa8TRLMjnKQW1u28X/gUSyPf73cy2kKjYtLWGy3NnWvAlzMSFOPmy7Esk8s0Rge2VPiQPM5qt+/G+vM//Dv9yv8cCedvtHh2e0vH9RjKlhkW61MJMGakOv9dHy2IbOYyt4bpA2qLkZD/hZy7dqPxWOIOSL4HS6QGKyI77lokAXsVGkk+O79MYY9BEL/GRo4=
-  dry-run: false
+  edge: true
+  provider: cloudfoundry
+  api: https://api.sys.gcp.esuez.org
+  username: admin
+  password:
+    secure: sW4F0mNXlwtoLtf8uIkrG2ZqYS/9h1co+kqdoRxUmxAd1zfAYvkjaRg4ilynWwkHQk4xlIx/sp/JyhTQsTEjyk/XupWe3h33NKyi2r7tpSlNjoZ9dV3wQuFzoJtNvPvpxH+BZwWi0WBx9lqOaEn32xSNOdwsvLfAKu1iddn6xL90R+/MUY6ia1IgTtrSTFZaMO11fMKaAcM2NrPLuNGRFYb2iMg1Wc8UQXGjT/OZk8UW5APjkfmAnZIBYmfSPJC9LqXxBEGQbe+lLCuVcVh8WAKUDd3rUxq82QhR9YdO95j8JI7QPrQVjBgkcQbqW1MRxYMx9mM3zHwohiShjBWuI5rBOMFTcqtN40MzwmMi/q9LhjzYcvtcIZO6fGJm/1WS3fgvixB5YL8evbhljcQb4XgrrZggFAlhyoBPfNR1JkrV77Y6sLr7/IqiN+bn8lkCyg0ahqXx/eeviaZzMCa1a/toxyAnLJDg/FTyzh4kpPhlb1W9Zw3w69llS88vZnmhm3L+qD5BniLsLgXl5lYAHO8hsBcM25fXBH97OWvCQgltaFPs1X+cnaznQn1N9hHieWp1IJgzDmsAQ3o8so5dsnfGEt4m0Vvk08UshlHeQh5YbNb73l56XfMnc/C6JyVIg6qzUUYuD8B1GdhFZVmpKrsbCspg+9baE2aNpabOZHg=
+  organization: eitan-org
+  space: development
   on:
-    tags: true
+    repo: eitansuez/articulate
