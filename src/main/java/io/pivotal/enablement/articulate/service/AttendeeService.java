@@ -18,7 +18,10 @@ import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+
+import static org.springframework.http.HttpMethod.GET;
 
 @Service
 public class AttendeeService {
@@ -76,7 +79,7 @@ public class AttendeeService {
   public List<Attendee> getAttendees() {
     try {
       ResponseEntity<PagedResources<Attendee>> responseEntity = restTemplate.exchange(
-          endpoint, HttpMethod.GET, getHttpEntity(), new ParameterizedTypeReference<PagedResources<Attendee>>() {
+          endpoint, GET, getHttpEntity(), new ParameterizedTypeReference<PagedResources<Attendee>>() {
           }
       );
 
@@ -102,9 +105,7 @@ public class AttendeeService {
 
   private HttpEntity<String> getHttpEntity() {
     HttpHeaders headers = new HttpHeaders();
-    List<MediaType> accepts = new ArrayList<>();
-    accepts.add(MediaType.APPLICATION_JSON);
-    headers.setAccept(accepts);
+    headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
     return new HttpEntity<>(headers);
   }
 
