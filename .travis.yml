@@ -5,12 +5,11 @@ script: env && ./mvnw package -B
 deploy:
   edge: true
   provider: cloudfoundry
-  api: https://api.sys.gcp.esuez.org
-  skip_ssl_validation: true
-  username: eitan
-  password:
-    secure: FPMVL9ZYMTyvccYrRvDO9nvWyhK7VweEm1HCFBKksPinakYQ18De46hoHw5nXA7n5j79Fa/m07Dm22y3zB9+wAxev9Q8NUSzoL0E14ik9e7VTnwdYy8ojoP8MDW1T4GSwyCusxAn+ywhW6f4v2HUYBUYV1cpkZlCTbNZXp+ox0LbSJEbycyazCeCA+vlLiydLrr6ijZ3qbnK6h2p4ribj5d9qef7jUAWVWAulR3/mXojZf46gh3DmaszmjzOfGW0GdkWa/ordSg7xPrgBNoauWZbJ+ZFwmuP0NpNw6SbsjWvh2yrQA+qXmHBqfIhI2G7+twaSLczcF1MYUv3LNXze6bnCkaY8DbeJHMUrqoc8RFsZuGHaedklBBPgaB4L9ed+4nEekecB+i+AY9S22A/zGpsaQ6/p6OsSPvkmn/Xn8r8tdAfYKEogArru3ER0kI6+j5HKCc+EoXP/zA6d1nbGg0cvSfZEjeDWY6/lK3FMfcreuLud43Ry6exg/fbxzF/O7rV+Zs1DHXwykmYPCgRLLZGMrSXkl4XFwqnPwqXiMMRzsM7Ll1fRphoygkWq9gBH8gecxeWI4KS3aqe2taWBUP7JcFuoxOgSnZvo/3qMQLUFmrvYc3HJ09Miuek2vfaN8Gd0VGGfQAkcrbDjIVYYOXOD9FQchTKuMFHyZQ5eN8=
+  api: https://api.run.pivotal.io
   organization: eitan-org
-  space: development
+  space: eitan-space
+  username: esuez@pivotal.io
+  password:
+    secure: CzZlBSJimAtB3sG4DNppgaprMfpfQu4dTLarsHVoRX6eyrVclYQLhxpsN3AsNvJGUQTmxnr0JGmHk77vZr9+u1osbesANb0UaK37qZgoQAgqVviK5/HctfpII/b9XMKbWk8hAYRXGj8xXV7VcGjg1n/y5EeDqMwDq60vg26mZ5CNFdfa34QFSsj+qzXjYPjzDU/LnfaQfDOKT60yD63SGMqcW2gQSM2k0pUP7dK8KUGirPTfKl3F6Y1a0DtrVn79bLXvfQUaL2zeFg6vh+JMae1FfGM6K8BAKyeQpt8iQjNfcnCh4D+X3Tne9AOvyqyIauaBCw3ShmDNX2yHcOgxGS+qRZGM17iJ0BpFRtr3871KTdQUF6zglDmO0j3QY1a+hvLGBv+admCEzy13A4Jlky2lt852NbtKivyfklhAzuZN9ZXqtdZJKOG+q1IwiKOsPbCT3NS/19ub786LISeNfDflutHMFRLJseSWwQrUp2WSQEg129z0ac0QODyG5hWl5HPsg+2emAB1PKoCvJmeuQmKvyaIkrRlus2lD281i9TQ5FYuQlrMEqmo1veL8aoGZFfFO9DeDsvMPLrrClCwaQcKnDJZZmgJlhDeiCPHYhkyYYnQqrZoYVvK9lwMa0/QkrNszZA36lOBPvAEMTTtcsG73v50ZBd1Fgm3VAAOQRk=
   on:
     repo: eitansuez/articulate

@@ -2,7 +2,7 @@
 applications:
 - name: articulate
   path: target/articulate-0.0.2-SNAPSHOT.jar
+  host: eitan-articulate
   memory: 768M 
-  random-route: true
   buildpack: java_buildpack
 
