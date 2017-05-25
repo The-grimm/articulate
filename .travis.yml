@@ -6,10 +6,10 @@ deploy:
   edge: true
   provider: cloudfoundry
   api: https://api.run.pivotal.io
-  organization: eitan-org
-  space: eitan-space
   username: esuez@pivotal.io
   password:
     secure: CCgJBq8dotAwC4PBZLSB8L47kx4M6q1GXItfI5IWbwuu/ZnuJsHtHu/oPq8qWwYzynYMdibhtkV/H/whoX+ggYC2vlSF5JuBGLCE1axpn/DnUI7f4GWHwewxV05tEXJd1hjNldOJ+Ln/GsSFlOr0TDehUo+AzSN0hVWbLp9vJl+TnODnwiYda81+1pdWX/EOnrnxtP4JH5wfJXGchw2VSjLvUZFTimNxnossM7+U6C61ayjw7eEKQSmT77AkEsekl2xJ35bLghxLfVcnSponxbHu/x8IvkXqKWOogJp2ZBbT2H2VxqcdqpJb6fAubUzI0pmiwCMXDU5UwJqf7jpJPCEBQrHWITtnMqMZOqCszM0uSuS2XpVaKF9v5w7vQMmrQ2j+/Kx9VhuHsN/YqECWxg/cIV0JfsRJXwRnd0QW9XA8S09MeM853bNe58wpq/Oegit/dLGqyfzlfYcKujZ3acdt6iX/uA4qQTgZTF2nrkGk758MYWBUphNwS/Y7rsUbWGomNSErh4QoxEQQsCpSDuImtZlbk+9HgXa9rujro7arSrxQOXMoZbc9RP2ZH6GhF/TcOVMa+RGAMmoov+pjW2A5V6dG/v47gYehBzcgTnAMiNx9Ov/KW3BA0EBkjGJn5+UFWPbAmEfe7bB9LzRnlCNANyMZAAplH/yCp1AZ2sM=
+  organization: eitan-org
+  space: eitan-space
   on:
     repo: eitansuez/articulate
