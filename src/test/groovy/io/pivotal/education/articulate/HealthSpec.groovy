@@ -15,11 +15,13 @@ class HealthSpec extends Specification {
         .header("Accept", "application/json")
         .url("${baseUrl}/health")
         .build()
-    def response = client.newCall(request).execute()
-    def text = response.body().string()
+
+    and:
+    def parser = new JsonSlurper()
 
     when:
-    def parser = new JsonSlurper()
+    def response = client.newCall(request).execute()
+    def text = response.body().string()
     def json = parser.parseText(text)
 
     then:
