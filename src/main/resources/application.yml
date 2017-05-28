@@ -18,3 +18,10 @@ info:
     name: @project.name@
     description: @project.description@
     version: @project.version@
+
+endpoints:
+  mappings:
+    sensitive: false
+  env:
+    sensitive: false
+
