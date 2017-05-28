@@ -1,4 +1,4 @@
-package io.pivotal.enablement.articulate.cloud.service;
+package io.pivotal.education.articulate.cloud.service;
 
 import org.springframework.cloud.service.UriBasedServiceInfo;
 

@@ -1,4 +1,4 @@
-package io.pivotal.enablement.articulate.model;
+package io.pivotal.education.articulate.model;
 
 import lombok.Builder;
 import lombok.Data;

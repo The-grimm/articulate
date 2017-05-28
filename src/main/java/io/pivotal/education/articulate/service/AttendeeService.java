@@ -1,8 +1,8 @@
-package io.pivotal.enablement.articulate.service;
+package io.pivotal.education.articulate.service;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import io.pivotal.enablement.articulate.cloud.service.WebServiceInfo;
-import io.pivotal.enablement.articulate.model.Attendee;
+import io.pivotal.education.articulate.cloud.service.WebServiceInfo;
+import io.pivotal.education.articulate.model.Attendee;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;

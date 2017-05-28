@@ -1,8 +1,8 @@
-package io.pivotal.enablement.articulate.controller;
+package io.pivotal.education.articulate.controller;
 
-import io.pivotal.enablement.articulate.model.Attendee;
-import io.pivotal.enablement.articulate.service.AttendeeService;
-import io.pivotal.enablement.articulate.service.EnvironmentHelper;
+import io.pivotal.education.articulate.model.Attendee;
+import io.pivotal.education.articulate.service.AttendeeService;
+import io.pivotal.education.articulate.service.EnvironmentHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;

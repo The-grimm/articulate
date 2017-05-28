@@ -1,4 +1,4 @@
-package io.pivotal.enablement.articulate;
+package io.pivotal.education.articulate;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;

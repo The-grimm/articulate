@@ -1,4 +1,4 @@
-package io.pivotal.enablement.articulate.service;
+package io.pivotal.education.articulate.service;
 
 import java.util.Collections;
 import java.util.HashMap;

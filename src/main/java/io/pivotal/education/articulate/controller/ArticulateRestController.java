@@ -1,6 +1,6 @@
-package io.pivotal.enablement.articulate.controller;
+package io.pivotal.education.articulate.controller;
 
-import io.pivotal.enablement.articulate.service.EnvironmentHelper;
+import io.pivotal.education.articulate.service.EnvironmentHelper;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
