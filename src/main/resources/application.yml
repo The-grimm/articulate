@@ -22,4 +22,5 @@ info:
 management:
   security:
     enabled: false
-
+  cloudfoundry:
+    skip-ssl-validation: true
