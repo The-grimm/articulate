@@ -5,6 +5,15 @@ resources:
   source:
     uri: https://github.com/eitansuez/articulate.git
 
+- name: deploy-articulate
+  type: cf
+  source:
+    api: {{cf-api}}
+    username: {{cf-username}}
+    password: {{cf-password}}
+    organization: {{cf-organization}}
+    space: {{cf-space}}
+
 jobs:
 - name: build-project
   public: true
@@ -14,3 +23,6 @@ jobs:
     trigger: true
   - task: maven-build
     file: articulate-repo/maven-build.yml
+  - put: deploy-articulate
+    params:
+      manifest: articulate-repo/manifest.yml
