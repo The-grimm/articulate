@@ -8,5 +8,8 @@ image_resource:
 inputs:
 - name: articulate-repo
 
+outputs:
+- name: target
+
 run:
   path: articulate-repo/build.sh
