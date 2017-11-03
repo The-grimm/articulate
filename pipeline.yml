@@ -1,0 +1,16 @@
+---
+resources:
+- name: articulate-repo
+  type: git
+  source:
+    uri: https://github.com/eitansuez/articulate.git
+
+jobs:
+- name: build-project
+  public: true
+  serial: true
+  plan:
+  - get: articulate-repo
+    trigger: true
+  - task: maven-build
+    file: articulate-repo/maven-build.yml
