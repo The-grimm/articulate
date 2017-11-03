@@ -26,4 +26,3 @@ jobs:
   - put: deploy-articulate
     params:
       manifest: articulate-repo/manifest.yml
-      path: ../target/articulate-0.0.3-SNAPSHOT.jar
