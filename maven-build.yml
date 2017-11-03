@@ -9,7 +9,7 @@ inputs:
 - name: articulate-repo
 
 outputs:
-- name: target
+- name: artifacts
 
 run:
   path: articulate-repo/build.sh
